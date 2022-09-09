@@ -1,0 +1,374 @@
+html{
+   box-sizing: border-box;
+  
+   
+}
+
+h1{
+    font-size: 2rem;
+    color: black;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+
+}
+h1,h2,h3{
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+}
+h1 span{
+    color:#037bc0;
+}
+h2 span{
+    color:red;
+    
+}
+
+footer a{
+    text-transform: lowercase;
+}
+h3{
+    font-size:1rem;
+}
+
+
+
+
+
+
+
+
+
+.nav-principal{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+   
+}
+.invitacion{
+
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color:blueviolet
+}
+.coloralfa{
+    color:green;
+}
+
+.sobre_nosotros{
+    background-color: green;
+    width:200px;
+    padding:25px;
+    box-sizing: border-box;
+}
+.titulo{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size:1cm
+}
+.hero{
+   background-image: url("./ImagenesEcommerce/principal.jpg");
+   height: 550px;
+   background-repeat: no-repeat;   /*css por defecto me repite la imagen en su contenedor*/
+   background-size:cover; /*ocupa el totoal de su contenedor.*/
+   background-position: 1px 1px;
+}
+.contenedor{
+    max-width: 1000px; /*esta clase me hace que la nav no tegama mas que ese tamaño*/
+    margin: 0 auto 0 auto;
+
+  
+}
+.navegacion{
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width:1px;
+    padding-top:20px;
+
+}
+.categorias h2{
+
+    text-align: center;
+}
+.listado-categorias{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+}
+.categoria a{
+        text-align: center;
+        display:block;
+        font-size: 20px
+}
+.categoria a:hover{
+    background-color:#037bc0;
+    color:#ffffff;
+    font-size:1rem;
+}
+.categoria img{
+    width: 20rem;
+ 
+}
+/* bloque nosotros*/
+
+.nosotros{
+    height: 120px;
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%),url(./ImagenesEcommerce/nosotros.jpg); 
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:white
+
+}
+.nosotros-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+
+
+}
+
+.texto-nosotros{
+    grid-column: 2/3;
+    color:white;
+}
+
+/* Contenido Principal*/
+
+.contenido-principal{
+    padding-top:5rem;
+
+}
+
+.text-center{
+    text-align:center
+}
+
+.producto{
+    background-color: #037bc0;
+
+}
+
+.texto-producto{
+    text-align: center;
+    color:#fff;
+    padding: 1rem;
+
+}
+
+.texto-producto .precio{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.texto-producto h3{
+    margin:0,0,0.5rem,0;
+}
+.btn {
+    background-color: #8cbc00;
+    display:block;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.btn :hover{
+    background-color: #769c02;
+
+}
+
+
+
+
+.max-width-30{
+    max-width: 10rem;
+}
+
+
+
+
+
+
+
+
+.texto-producto a{
+    background-color: #8cbc00;
+    display:block;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out
+}
+
+.texto-producto a:hover{
+    background-color: #769c02;
+
+}
+.listado-productos{
+display:grid;
+grid-template-columns: repeat(6, 1fr);
+gap:20px
+}
+.producto:nth-child(1){
+grid-column-start: 1;  /*esto indica es la linea donde va a estar*/
+grid-column-end: 7;
+display:grid;
+grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img{
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+    }
+
+.producto:nth-child(2){
+    grid-column-start: 1;  /*esto indica es la linea donde va a estar*/
+    grid-column-end: 4;
+    }
+.producto:nth-child(2) img,
+.producto:nth-child(3) img{
+        height:25rem;
+        width: 100%;
+        object-fit: cover;
+        }
+.producto:nth-child(3){
+        grid-column-start: 4;  /*esto indica es la linea donde va a estar*/
+        grid-column-end: 7;
+    }
+
+.producto:nth-child(4){
+        grid-column-start: 1;  /*esto indica es la linea donde va a estar*/
+        grid-column-end: 3;
+    }
+.producto:nth-child(5){
+        grid-column-start: 3;  /*esto indica es la linea donde va a estar*/
+        grid-column-end: 5;
+    }
+
+.producto:nth-child(6){
+        grid-column-start: 5;  /*esto indica es la linea donde va a estar*/
+        grid-column-end: 7;
+    }
+/*foooter*/
+.site-footer{
+    border-top:1px solid #e1e1e1;
+    margin-top:5rem
+
+}
+.grid-footer{
+    display:flex;
+}
+
+.grid-footer div{
+    flex:1
+}
+
+.grid-footer div:nth-child(2){
+    flex:1
+}
+
+.site-footer a{
+ display:block;
+}
+
+.contenido-nosotros{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 4rem;
+}
+.informacion-nosotros{
+    display:flex;
+    flex-direction:column;  
+    justify-content: center;
+
+
+}
+.contenedor-blog{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap:4rem;
+
+}
+.entrada{
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border:none;
+}
+.entrada-meta{
+    display:flex;
+    justify-content: space-between;
+}
+
+.entrada-meta span{
+ color: #037bc0;
+}
+.entrada-meta p{
+    font-weight: 700;
+}
+.contenido-entrada-blog{
+    width: 60rem;
+    margin:0 auto;
+}
+.galeria{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0.5rem;
+}
+
+.galeria img{
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+
+/*formulario*/
+
+.formulario{
+    max-width: 600px;
+    margin:0 auto;
+
+}
+
+.formulario fieldset{
+    border-color:black;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.formulario legend{
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px;
+    margin-bottom: 40px;
+    
+}
